@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BrewQ</title>
+    <link rel="stylesheet" href="coffee.css" />
+  </head>
+  <body>
+    <h1>BrewQ Order Now</h1>
+
+    <form id="order-form">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+
+      <div>
+        <label for="coffee-type">Coffee Type:</label>
+        <select id="coffee-type" name="coffee-type" required>
+          <option value="">-- Select --</option>
+          <option value="latte">Latte</option>
+          <option value="cappuccino">Cappuccino</option>
+          <option value="americano">Americano</option>
+          <option value="espresso">Espresso</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="size">Size:</label>
+        <select id="size" name="size" required>
+          <option value="">-- Select --</option>
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="milk">Milk:</label>
+        <select id="milk" name="milk" required>
+          <option value="">-- Select --</option>
+          <option value="No Milk">No Milk</option>
+          <option value="whole">Whole</option>
+          <option value="skim">Skim</option>
+          <option value="almond">Almond</option>
+          <option value="oat">Oat</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="sugar">Sugar:</label>
+        <select id="sugar" name="sugar" required>
+          <option value="">-- Select --</option>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+
+      <button type="submit">Order</button>
+    </form>
+    <div id="thank-you-message"></div>
+
+    <div id="order-summary"></div>
+    <script src="index.js">
+      script
+    </script>
+  </body>
+</html>
